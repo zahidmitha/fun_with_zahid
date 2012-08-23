@@ -1,0 +1,56 @@
+print = print something (use"" for strings and + - / * < > <= >=for numbers
+
+# = use for comments
+
+print floating points = use decimals
+
+variables use =
+
+to print variables, "We can do", this, "otherwise we fail."
+
+Single variables print "Let's talk about %s." % my_name
+
+multiple variables: print "If I add %d, %d, and %d I get %d." % (
+	my_age, my_height, my_weight, my_age + my_height + my_weight)
+	
+Adding strings (ex6). Define the strings as w = "Hello" and e = "duck" then print w + e
+
+%d for decimal
+
+%s for string
+
+%r is for debugging-it gives RAW programmer's information on a string. NG Cannot use \n with %r, 
+as %r prints it out as you wrote it, including stuff like \n
+
+* and a number (i.e. 10) brings a a lot strings together onto one line
+
+\ in general is an escape sequence-it allows us to put difficult to type characters into a string
+
+\n new line
+
+"" "" allows us to print as much text as we want to on several lines
+
+More \: When using quotes to create a string, \ allows us to get around issues of multiple quotes. I.e. 
+"I am 6'2\" tall" means the first " doesn't end the string
+
+\t tabs in the text
+
+\n is new line
+
+\\ prints just ONE backlslash
+\' single quotes ( ' )
+\" Double quotes ( " )
+\a ASCII Bell (BEL)
+\b ASCII Backspace (BS)
+\f ASCII FOrmfeed (FF)
+\n ASCII Linefeed (LF)
+\N{name} Character named name in Unicode database (Unicode only)
+
+
+
+True and False do not have to be put in string quotes-they represent the concepts of true/false
+
+raw_input() allows us to enter a value ourselves
+we can pput anything in the brackets and it will show on the console i.e. raw_input(?)
+We can assign a variable to raw inputs entered i.e. age = raw_input()
+

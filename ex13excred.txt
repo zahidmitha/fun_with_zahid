@@ -1,0 +1,6 @@
+from sys import argv
+
+tom, dick = argv
+
+print "The tom is called", tom
+print "My dick is called", dick
