@@ -46,11 +46,128 @@ More \: When using quotes to create a string, \ allows us to get around issues o
 \n ASCII Linefeed (LF)
 \N{name} Character named name in Unicode database (Unicode only)
 
+Functions:
+def name of function(variable1, variable2)
+	print x
+	return what you want to do (i.e. a - b)
+	
+Then define functions
+
+age = add(30,5)
+
+Then call them
+
+print "Age is %d" % (age)
+
+You can also play with several functions i.e.
+
+def add(a, b)
+	return a + b
+	
+def multiply(a, b)
+	return a * b
+	
+age = add(20, 10)
+ig = multiply(2, 2)
+
+what = multiply(5, add(age, iq))
+
+print "We know", what, "is a bullshit number."
+
+
+from sys import argv
+
+script, first, second, third = argv
 
 
 True and False do not have to be put in string quotes-they represent the concepts of true/false
 
 raw_input() allows us to enter a value ourselves
-we can pput anything in the brackets and it will show on the console i.e. raw_input(?)
+we can put anything in the brackets and it will show on the console i.e. raw_input(?)
 We can assign a variable to raw inputs entered i.e. age = raw_input()
+
+open() open file
+
+close() close file
+
+read() read file
+
+raw_input() add an input
+
+target = open(filename, w) open file called filename
+
+target.truncate() truncate/erase file
+
+target.write() write
+target.write(line1) write on line 1
+target.close close it
+
+len.variable = length of file in bytes
+
+exists = does it exist?
+
+def print_two (*args)
+	arg1, arg2 = args
+	print "arg1: %r, arg2: %r" %(arg1, arg2)
+	
+def print_two_again(arg1, arg2):
+	print "arg1: %r, arg2: %r" %(arg1, arg2)
+	
+def print_one(arg1):
+	print "arg1: %r" % arg1
+	
+def print_none():
+	print "I got nothin'/"
+	
+THEN CALL THEM
+
+print_two("Zahid", "Mitha")
+print_two_again ("Zahid", "Mitha")
+print_one ("Zain")
+
+You can do several things with functions:
+
+1. Give them numbers directly
+2. Use variables from the script to input into them
+3. Do math inside them
+4. Combine variables and math
+
+
+def wine_and_spirits(wine_bottles, spirit_shots)
+	print "You have %d wine bottles" wine_bottles
+	print "You have %d shots of vodka!" %spirits_shots
+	print "Let's get wasted!"
+	print "I actually prefer crystal meth.\n"
+	
+1. (giving function numbers directly)
+
+wine_and_spirits (10,30)
+
+2. Use variables from script
+
+merlot = 10
+vodka_shots = 30
+
+wine_and_spirits(merlot, vodka_shots)
+
+3. Math inside
+
+wine_and_spirits (15 - 5, 7 + 23)
+
+4. Combine the two
+
+wine_and_spirits(merlot +25, vodka_shots + 66)
+
+
+
+seek(0) = go to the start of a file (first character = 0)
+
+readline() = read the line
+
+rewind() go back
+
+return a + b = add a and b
+
+int() convert a number or  string to an integer, or return 0 if no arguments are given
+
 

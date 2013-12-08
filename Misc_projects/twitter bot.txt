@@ -1,0 +1,8 @@
+ 	bJ5IIoEfSuuAWvfBM0Q
+	GZZhvI0AP6kimS0IwsD401RfE2IVrXTatBMpnI4a0
+	
+	766466876-QMw2wH1HedUpTODK4bd9g9iT8nvizQRX92Rj2k0L
+	 	888regJ7oSXY1ClXeUKwKvR6qlHY57YajvRKXfk0
+		
+		
+api = twitter.Api(consumer_key='bJ5IIoEfSuuAWvfBM0Q', consumer_secret='GZZhvI0AP6kimS0IwsD401RfE2IVrXTatBMpnI4a0', access_token_key='766466876-QMw2wH1HedUpTODK4bd9g9iT8nvizQRX92Rj2k0L', access_token_secret='888regJ7oSXY1ClXeUKwKvR6qlHY57YajvRKXfk0')

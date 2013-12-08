@@ -1,0 +1,22 @@
+cloud servers:  instances on demand vs spot (bidding)
+
+Python container for other languages
+	-breaks up into logical segment
+	-Django
+	-html/Javascript in Java as appended as static files
+	-website template:
+		-django apps, preconstrcuted places of calc
+			serve up codde within a host
+			-has to have a python interpreter
+			-hosted in top of AWS (cloud)
+			-basic application free, no reserves cost you
+	udacity
+	wordpress is serverstretch
+		-provide blog-like support
+		-blog performs activity regularly
+			-post content to people
+	
+	-API
+		-programming contract
+		-very detailed specification that translates information into differet information
+		-Database: store information (eg MySQL)

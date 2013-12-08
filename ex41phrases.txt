@@ -1,0 +1,27 @@
+class X(Y)
+
+	INHERITANCE: Make a class X that is-a Y
+
+class X(object): def __init__(self, J)
+
+	Composition: class X has-a __init__ that takes parameters self and J
+
+class X(object): sef M(self, J)
+
+	Composition within a function in a class: CLass X has-a function named M that takes parameters self and J
+
+foo = X()
+
+	set foo to an instance of class X (which you can then uses as foo)
+
+foo.M(J)
+	
+	from foo get the M function, and call it with parameters self, J (I think you do this after setting foo to class X, and then refer to it)
+
+foo.K = Q
+
+	from foo get the attribute K and set it to Q (surely setting works right to left?)
+
+
+
+

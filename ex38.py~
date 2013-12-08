@@ -1,0 +1,36 @@
+ten_things = "Apples Oranges Crows Telephone Light Sugar"
+
+print "Wait there's not ten things in that list, let's fix that."
+
+stuff = ten_things.split(' ')
+more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
+
+while len(stuff) != 10:
+	next_one = more_stuff.pop()
+	print "Adding ", next_one
+	stuff.append(next_one)
+	print "There's %d items now." %len(stuff)
+
+print "There we go: ", stuff
+
+print "Let's do some other things with stuff."
+
+print stuff[1]
+print stuff[-1] #whoah, fancy!
+print stuff.pop()
+print ' '.join(stuff) #what? cool!
+print '#'.join(stuff[3:5]) #super stellar!
+
+
+# Extra Credit
+
+# ten_things.split(' ') is the equivalent of split(ten_things, ' ')
+# next_one = more_stuff.pop() is the equivalent of pop(next_one, )
+# stuff.append(next_one) is append(stuff, next_one)
+# stuff.pop() is pop(stuff,  )
+# ' '.join(stuff) is ' '.join(stuff) NB: It doesn't change. 
+# '#'.join(stuff[3:5]) is equivalent of join('#', stuff[3:5])
+
+# A class is http://www.sthurlow.com/python/lesson08/. It's like a tenplate that allows functionss and varibales that are closely related to interact.
+
+#DIR(object) lists the valid attributes for an object, such as a class. i.e. it gives us the class' attributes.

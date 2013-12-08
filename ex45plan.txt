@@ -1,0 +1,22 @@
+You are the famous Monoply Shoe, destined for greatness and riches.
+Your aim is to get from Go to Mafair, buying properties along the way. You start with $1000 and can choose to buy properties on each tile. A random number is added to your total depending on the number of properties you own. If you end the game with more than $1000 in assets and are cash flow positive, you win. You go to four tiles.
+Each tile will print out its own description and tell the engine what tile to go to next.
+
+
+Old Kent Road
+Player can choose to buy for 100. A random amount of money is deducted between 1 and 100 dollars
+
+Angel
+Player can choose to buy for 200. A random amount between 1 and 100 is deducted. A 50/50 chance of 25 added IF they bought Old Kent.
+
+Trafalgar Square
+Player can choose to buy for 300. A random amount between 1 and 100 deducted. A 50/50 chance of 25 added IF they bought Old Kent. A 50/50 chance of 50 added if they bought Angel
+
+Mayfair
+Player can choose to buy for 400. A random amount between 1 and 100 deducted. A 50/50 chance of 25 added IF they bought Old Kent. A 50/50 chance of 75 added if they bought Angel. A 50/50 chance of 75 added if they bought Trafalgar
+
+Go
+Player receives 50. A random amount between 1 and 100 deducted. A 50/50 chance of 25 added IF they bought Old Kent. A 50/50 chance of 75 added if they bought Angel. A 50/50 chance of 75 added if they bought Trafalgar. A 50/50 chance of 100 added if they bought Mayfair
+
+Bankruptcy
+Player becomes cash flow negative and loses the game.

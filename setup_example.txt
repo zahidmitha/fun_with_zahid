@@ -1,0 +1,10 @@
+from distutils.core import setup
+
+setup(name='Distutils',
+		version='1.0',
+		description = 'python desc utilities',
+		author = 'Zahid',
+		author_email='gward@python.net',
+		url='',
+		packages = ['distutils', 'distutils.command']
+)

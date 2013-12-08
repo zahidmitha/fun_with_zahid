@@ -1,0 +1,24 @@
+class Tune(object):
+	
+	def __init__(self, melody):
+		self.jazz = melody
+	
+	def remix_dat(self):
+		for line in self.jazz:
+			print line
+
+crazy = Tune(["We're never gonna survive..",
+		"Unless we get a little",
+		"CRAZY!"])
+
+beyonce_crazy = Tune(["So crazy right now..",
+			"Looking so crazy in love",
+			"This song is a guilty pleasure"])
+
+
+crazy.remix_dat()
+
+print "-" * 10
+
+beyonce_crazy.remix_dat()
+

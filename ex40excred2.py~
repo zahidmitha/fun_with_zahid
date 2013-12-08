@@ -1,0 +1,21 @@
+class Song(object):
+	
+	def __init__(self, verse):
+		self.melody = verse
+
+	def elrond_of_rivendell (self):
+		for script in self.melody:
+			print script
+
+lemon_tree = Song(["All that I can see",
+			"Is just another lemon tree"])
+
+print "The best song of all"
+
+print "-" * 10
+
+lemon_tree.elrond_of_rivendell()
+
+
+
+		

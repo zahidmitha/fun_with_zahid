@@ -1,0 +1,39 @@
+class
+
+Tells python to make a new kind of thing (a class)
+
+object
+
+Two meanings: The most basic kind of thing, and any instance of some thing.
+
+instance
+
+What you get when you tell python to create a class (Zahid's note: you instanciate it I...as in create a copy based on the blueprint class created earlier)
+
+def
+
+Defines a function within a class
+
+Self
+
+within the function in a class, self is a variable for the instance/object being accessed
+
+inheritance
+
+CLasses can inherit traits from other classes, like parents to children, or like the golf club example-there is a golf club class, and then other types of club inherit attributes (how it looks and club size) and functions (the swing as a result of the club size)
+
+composition
+
+The concept that a class can be composed of other classes as parts, like a car has wheels.
+
+attribute
+
+The name for property classes have as a reuslt of composition-these are usually variables
+
+is-a
+
+Phrase to say that something INHERITS from another, as in Salmon is a Fish
+
+has-a
+
+a phrase to say that something is COMPOSED of other things or has a TRAIT, as in Salmon has a Mouth

@@ -1,0 +1,359 @@
+and 
+used for joint statements. i.e. if x and y == TRUE
+
+del
+Removes an item from a list or deletes the list itself. i.e. a =[1,2,3] del a[0] removes 1. Opposite of pop(), which adds an item.
+
+from
+allows you to import a module x and pull objects from it. i.e. from x import a and b
+
+not
+the opposiite in boolean logic i.e. not a and b
+
+while
+while loops. Can loop endlessly. While x <6, do something i.e. 															print "1"
+														numbers.append(x)
+														x = x + 1
+														print "numbers"
+
+as
+performs something as something else is happening i.e.
+with open('output.txt', 'w') as f:
+    f.write('Hi there!')
+
+elif
+used in if statements to access other options between if and else
+
+global
+statemt that holds for the entire current code block
+
+or
+used for options in boolean logic. i.e. if x or y == TRUE
+
+with
+two related operations which you’d like to execute as a pair, with a block of code in between. i.e. opening a file, manipulating the file, then closing it:
+with open('output.txt', 'w') as f:
+    f.write('Hi there!')
+
+
+assert
+Used to insert debugging assertions into a programme
+assert_stmt ::=  "assert" expression ["," expression]
+if __debug__:
+   if not expression: raise AssertionError
+
+else
+final part of if statements
+
+if
+creates a conditional statement
+
+pass
+null operation-executes no code. used as a placeholder
+
+yield
+used when defining a generator function, and only used in the body of a generator FUNCTION. If it's used in a function it becomes a 
+generator function. When called, it returns a generator iterator. The body of the generator is executed by calling the generator's  next()
+method until it raises an exception. When yield is executed, the state of the generator is frozen-i.e. the local state is retained.
+Cam be used in try clause (try...finally). Allows pending finally causes to execute. 
+	
+
+break
+May only occur nexted in a for or while loop, but not in a function or class nested within one of those. Ends the loop, skipping the else clause
+if the loop has one. If terminated, the loop control keeps the current value.  If there's a try...finally involved, the finally executes before the break.
+
+
+except
+occurs if there are exceptions. i.e. try...except. The except stops the code from carrying on. An except can have multiple conditions.
+except (RuntimeError, TypeError, NameError):
+except IOError, (errno, strerror):
+        print "I/O error(%s): %s" % (errno, strerror)
+
+import
+imports something from a python library
+i.e. from sys import argv
+
+print
+prints a string/variable/anything
+
+class
+A category of objects (think using thousands of functions)
+
+exec
+supports dynamic execution of code. If a string is seen with an exec, it is executed as a suite of Python statements. If it is code, it is just executed.
+
+in
+something is in a statement/string/anything. i.e. for x in random_variable/if "1" in raw_input
+
+raise
+if no expressions are present, raise reraises the last exception that was active. if no exception is active, a TypeError error is raised.
+
+continue
+only happens nested in for  or while loop. it continues with the next cycle of the nearest enclosing loop. When a try...finally is involved,
+the finally is executed first before the next cycle of the nearest enclosing loop.
+
+finally
+acts as a cleanup handler in a try..except..finally clause. I.e. if an except is not handled, and is svaed, it is executed when the finally clause happens. If, however, the finally clause raises another exception/executes a return or break, the saved exception is discarded. Continue statements are illegal in the finally clause
+
+
+is
+way to test if an object IS from a certain class
+
+return
+returns a statement/string/number. Kinda like print, but can do math? Returns only simple values.
+
+def
+creates a function
+
+for
+creates a for loop
+
+lambda
+for creating mini functions. i.e. f = lambda x:x+10
+							print f(10)
+							20
+
+
+try
+Works as a try...except combination
+
+	while True:
+		try:
+			x
+		except *something*:
+			y
+
+First, the clause under try is executed. If no exception occurs, the except is ignored and try alone is executed. If an exception occurs, try is skipped-if this exception matches the specs of the except clause, the result (y here) is executed. If an exception occurs that doesn't match the except clause but doesn't work under try, it is passed out to outer try statements. If no handler is found, it is an "unhandled exception" and execution stops. A try may have more that one except clause. Also, an except clause may have multiple exceptions (i.e. effectively except if "x, y and z happen"). Try...except also has an optional "else" clause. 
+
+
+Think of try...except as doing something (trying it). If it works, the code carries on down. If, however, it falls under what the exception asks for, it stops and oes whatever the exception clause wants.
+
+
+
+True
+Boolean logic-something is True. zahid = awesome is True
+								1 + 1 == 2 True
+
+
+False
+Boolean logic. Something is declared as false.
+						1 == 2 False
+
+None
+Boolean logic. The absence of a value.
+
+strings
+"Zahid is super cool". Just some text or even "1"
+
+numbers
+1 or 2...never in ""
+
+floats
+"Floats" the decimal point by adding numbers after it. i.e. 4 goes to 4.00
+
+
+lists
+A list contains items separated by a comma and enclosed in [] square brackets. Items belonging to a list can all be different data types. You can access the items in a list using a slice operator [] or [:] The + puts two lists together and * repeats lists.
+
+list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+tinylist = [123, 'john']
+
+print list          # Prints complete list
+print list[0]       # Prints first element of the list
+print list[1:3]     # Prints elements starting from 2nd till 3rd 
+print list[2:]      # Prints elements starting from 3rd element
+print tinylist * 2  # Prints list two times
+print list + tinylist # Prints concatenated lists
+
+
+
+\\
+Escape sequence followed by backslash shown
+
+\'
+escape sequence for ' quotation marks
+
+\"
+escape sequence for " quotation marks
+
+\a
+ASCII Bell (BEL)
+
+\b
+ASCII Backspace (BS)
+
+\f
+ASCII Formfeed (FF). ejects current page and prints to another
+
+\n
+escape sequence for new line
+
+\r
+Goes back to the first letter of the same line (i.e. to reprint over it with BOLD or ITALICS or COLOURS)
+
+\t
+escape sequence for tabbing in string
+
+\v
+Vertical tab. used to align elements on a page vertically
+
+%d
+Serves as placeholder for integer values that will be supplied after the last & character.
+
+%i
+string placeholder
+
+%o
+octal integer
+
+%u
+unsigned integer placeholder
+
+%x
+integer placeholder-"Exactly equivalent to printf("%x")"
+hexadecimal integer (lowercase letters)
+
+%ld
+long placeholder
+
+%X
+hexadecimal integer (UPPERcase letters
+
+%e
+exponential notation (lowercase e)
+
+%E
+exponential notation (upppercase E)
+
+%f
+treats value as a decimal
+
+%F
+treats value as a decimal
+
+%g
+the shorter of %f and %e
+
+%G
+the shorter of %F and %E
+
+%c
+integer placeholder
+
+%r
+Returns string/object after % in python syntax faithfully when printed. 
+
+%s
+Serves as placeholder for string values that will be supplied after the last & character.
+i.e. 
+
+qtylist = [5, 7, 3, 11, 2]
+unitlist = ['bottles', 'flocks', 'loaves', 'bags', 'cups']
+itemlist = ['beer', 'geese', 'bread', 'flax', 'tea']
+for i in range(5):
+    print "Give me %d %s of %s" % (qtylist[i], unitlist[i], itemlist[i])
+
+
+%%
+Leaves you with a single literal %.
+
+
++
+Adds values on either side of an operator i.e. a + b will give 30
+
+-
+Subtractors right hand from left hand i.e. a-b is 10 (b is subtracted from a)
+
+
+*
+Multiplies variables on either side of operator a*b is 200
+
+
+**
+Performs exponential (power) calculations on operators i.e. a**b gives 10 to the power of 20
+
+
+/
+Divides left land operator by right hand i.e. a/b a is divided by b
+
+
+//
+Floor division-Digits after the decimal point are removed after division. i.e. 9//2 is 4 and 9.0//2.0 is 4.0 (notice that the .5 doesn't exist even when the operators have decimal points...not sure why.
+
+
+%
+Modulus-dvides left hand operator by right hand and returns remainder. i.e. 5%3 is remainder 2 so we only get 2.
+
+<
+less than
+
+>
+greater than
+
+<=
+less than or equal to
+
+>=
+greater than or equal to
+
+
+==
+equal to in boolean logic
+
+
+!=
+not equal to in boolean logic. i.e. condition becomes TRUE if they're not equal to one another
+
+<>
+Checks if values of two operands are equal or not. If values are not equal then condition becomes TRUE (boolean logic)
+
+
+()
+Denotes opening of turple. Turples are sequences like lists. The only difference is that they can't be changed. They're effectively READ-ONLY lists. You can't add to or update a turple.
+
+[]
+Denotes the opening of a LIST
+list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+
+{}
+Denotes opening of a dictionary. Dictionaries have key: value pairs. tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
+print tinydict.keys() prints all KEYS
+print tinydict.values() prints all VALUES
+
+@
+
+'
+
+:
+Used in dictionaries/lists to call variables from a certain intial one i.e. [2:] asks for all things in list from the third onwards.
+
+.
+adds a command/function to something....like zahid= 5
+zahid.append(2)
+
+=
+Assigns right hand value to left hand. i.e. a = 20 b = 10. If a = b then a and b are 10.
+
+;
+
++=
+Adds right and left operand and assigns the total result value to the left operand. i.e. c+= a is equivalent to c = c + a
+
+-=
+Subtracts AND assignment. Subtracts right from left and assigns it to left. i.e. c-= a is equivalent to c = c - a
+
+
+*=
+Multiplies AND. Multiplies left and right operand and assigns value to left operand. i.e. c *= a is c = c * a
+
+/=
+Divide AND operand. Divides left by right and assigns it to the left. i.e. c /= a is c = c/a
+
+//=
+Divides AND operand by with a floor. It removes anything after the decimal point. i.e. c //= a is c = c / a but when the result is ALWAYS an integer.
+
+%=
+Modulus AND assignment. Divides left by left, takes modulus of it, and assigns it to the left i.e. c%= a is c = c % a
+
+**=
+Exponential AND assignment operator. Takes right exponential of left and assigns it to left. i.e. c**= a is c = c** a
